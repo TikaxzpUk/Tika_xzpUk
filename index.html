@@ -5,12 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>First page</title>
 		<link rel="stylesheet" href="tikasa.css" />
+		<script>
+			function myFunction() {
+  var x = document.getElementById("contents");
+  x.style.display = "none"; //just let the css value of button to none
+}
+		</script>
 
 	</head>
 	<body class="grid-main">
 		
 		<div class="contents">
-			<ul><!--верх-списка-->
+			<div class="flex-main">
+				<h2>content</h2>
+				<button type="button" onclick="myFunction()">Hide</button>
+			</div>
+			<ul id="contents"><!--верх-списка-->
 			 	<li><a href="#top">(top)</a></li>
 				<li><a href="#Gameplay">Gameplay</a></li>
 				<li><a href="#releases">Releases</a></li>
