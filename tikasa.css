@@ -49,6 +49,36 @@ a:hover {
   text-decoration: underline;
 
 }
+.contents{
+	grid-column: 1 / 4;
+}
+
+.content-main{
+	 grid-column: 4 / 12;
+
+}
 
 
-			
+@media  (min-width: 720px) {
+
+	.grid-main {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 10px;
+  }}
+img{
+	object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+@media  (min-width: 720px) {
+.info-panel{
+	float: right;
+	width: 30%;
+
+}}
+
+
+
+       
