@@ -15,6 +15,7 @@
 .tableContents ul li a.highlighted {
     /* Ваш стиль для выделенных ссылок */
     font-weight: bold;
+    color: rgb(0, 0, 0, 0.79);
   }
 
 .hidden
@@ -34,8 +35,8 @@ left: 10px;
 .buttonDropDown 
 {
     border: 1px solid black;
-    height: 1.5em;
-    width: 1.5em;
+    height: 2em;
+    width: 2em;
     display: none;
 
 
@@ -47,7 +48,27 @@ left: 10px;
     display: inline;
 }
 
+.horizontal-line 
+{
+    position: relative;
+    margin: 20px 0; /* Расстояние между линиями */
+  }
+  
+  .horizontal-line::before,
+  .horizontal-line::after 
+  {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 70%;
+    height: 1px; /* Толщина линии */
+    background-color: black; /* Цвет линии */
+  }
+  
 
+  
+ 
 
 
 

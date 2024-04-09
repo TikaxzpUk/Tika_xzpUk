@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(getthecontainer.classList);
   }); 
 
-  document.addEventListener('DOMContentLoaded', function() {
+/*   document.addEventListener('DOMContentLoaded', function() {
     var sidebarLinks = document.querySelectorAll('.tableContents ul li a');
   
     // Функция для проверки, виден ли элемент в области видимости
@@ -57,4 +57,62 @@ document.addEventListener('DOMContentLoaded', function() {
     // Вызываем функцию при прокрутке страницы
     window.addEventListener('scroll', highlightSidebarLink);
     highlightSidebarLink(); // Для инициализации при загрузке страницы
+  }); */
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var sidebarLinks = document.querySelectorAll('.tableContents ul li a');
+  
+    // Функция для проверки, виден ли элемент в области видимости
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      var resalt = false;
+      if (  rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)) 
+      {
+        resalt = true;
+      }
+      return resalt;
+    /*   return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      ); */
+    }
+  
+    // Функция для выделения текущего заголовка в боковой панели
+    function highlightSidebarLink() {
+     var highlighted = false;
+      for (var i = 0; i < sidebarLinks.length; i++) {
+        var targetId = sidebarLinks[i].getAttribute('href').substring(1);
+        var targetSection = document.getElementById(targetId);
+        if (targetSection && isElementInViewport(targetSection) && !highlighted) {
+          sidebarLinks[i].classList.add('highlighted');
+          highlighted = true;
+        } else {
+          sidebarLinks[i].classList.remove('highlighted');
+        }
+      } 
+      /* var highlighted = false;
+        var i = 0;
+        while(!highlighted && i < sidebarLinks.length) {
+            var targetId = sidebarLinks[i].getAttribute('href').substring(1);
+            var targetSection = document.getElementById(targetId);
+            if(targetSection && isElementInViewport(targetSection)) {
+                sidebarLinks[i].classList.add('highlighted');
+                sidebarLinks[i + 1].classList.remove('highlighted');
+                highlighted = true;
+            } else {
+                sidebarLinks[i].classList.remove('highlighted');
+            }
+            i++;
+        } */
+    }
+  
+    // Вызываем функцию при прокрутке страницы
+    window.addEventListener('scroll', highlightSidebarLink);
+    highlightSidebarLink(); // Для инициализации при загрузке страницы
   });
+  
