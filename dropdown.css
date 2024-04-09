@@ -1,0 +1,153 @@
+.dropDown
+{
+    position:absolute;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: auto;
+    max-height: 400px;
+    overflow: auto;
+    display:block;
+
+
+ 
+
+}
+.tableContents ul li a.highlighted {
+    /* Ваш стиль для выделенных ссылок */
+    font-weight: bold;
+  }
+
+.hidden
+{
+    display:none;
+}
+
+
+.dropDownLeft
+{ 
+position: sticky;
+top: 10px;
+left: 10px;
+
+}
+
+.buttonDropDown 
+{
+    border: 1px solid black;
+    height: 1.5em;
+    width: 1.5em;
+    display: none;
+
+
+}
+
+
+.title
+{
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <div class="contents" id="contents_main">
+<div class="flex-main">
+    <h2>content</h2>
+    <button type="button" id="hideContentsButton1" onclick="hideContents1()">hide</button>
+
+</div>
+
+<ul id="contents"><!--верх-списка-->
+    <li><a href="#top">(top)</a></li>
+    <li><a href="#Gameplay">Gameplay</a></li>
+    <li><a href="#releases">Releases</a></li>
+    <li>
+        <li><input id="img" onclick="hideElement2('img','contents1');" type="image" src="arrow.png" alt="Submit" width="15px" height="15px">
+        <a href="#main-series">Main series</a>	
+    </li>
+<ul id="contents1">
+    <li><a href="#the-witcher">The Witcher</a></li>
+    <li><a href="#the-witcher2">The Witcher 2: Assassins of Kings</a></li>
+    <li><a href="#the-witcher3">The Witcher 3: Wild Hunt</a></li>
+    <li><a href="#the-witcher-remake">The Witcher Remake</a></li>
+    <li><a href="#the-witcher4">Project Polaris</a></li>
+    
+</ul>
+<li>
+    <li><input id="img2" onclick="hideElement2('img2','contents2');" type="image" src="arrow.png" alt="Submit" width="15px" height="15px">
+    <a href="#spin-offs">Spin-offs</a>
+</li>
+<ul id="contents2">
+    <li><a href="#crimson-trail">The Witcher: Crimson Trail</a></li>
+    <li><a href=""#the-witcher-adventure-game>The Witcher Adventure Game</a></li>
+    <li><a href="#the-witcher-battle-arenat">The Witcher Battle Arena</a></li>
+    <li><a href="#gwent">Gwent: The Witcher Card Game</a></li>
+    <li><a href="#thronebreaker">Thronebreaker: The Witcher Tales</a></li>
+    <li><a href="#witcher-wonster-wlayer">The Witcher: Monster Slayer</a></li>
+    <li><a href="#roach-race">Roach Race</a></li>
+    <li><a href="#project-sirius">Project Sirius</a></li>
+</ul>
+<li><input id="img3" onclick="hideElement2('img3','contents3');" type="image" src="arrow.png" alt="Submit" width="15px" height="15px">
+    <!-- <button type="button" id="hideContentsButton3" onclick="hideElement('hideContentsButton3','contents3')">hide</button> -->
+    <a href="#reception">Reception</a>
+</li>
+<ul id="contents3">
+    <li><a href="#sales">Sales</a></li>
+    <li><a href="#apd">Author payment demands</a></li>
+</ul>
+<li><a href="#references">References</a></li>
+<li><a href="">External links</a></li>
+
+</ul>
+
+
+</div> */

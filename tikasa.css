@@ -54,6 +54,9 @@ a:hover {
 
 }
 
+#ideContentsButton2{
+	background-image: url('arrow.png');
+}
 
 
 
@@ -69,18 +72,31 @@ a:hover {
 	float: right;
 	width: 30%;
   }
-
-  .contents{
-	grid-column: 1 / 4;
+ .contents{
 	position: sticky;
 	top:0;
+	width: auto;
+	overflow: auto;
 	height: 100vh;
-  }
+	display: block;
+	background-color: rgb(243, 243, 243);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+  } 
+
+#contentsWrapper
+{
+	grid-column: 1 / 4;
+}  
 
   .content-main{
-	grid-column: 4 / 12;
+	grid-column: 4/ 12;
 }
 
+}
+
+input{
+	transform:rotate(90deg);
 }
 
 img{
@@ -89,6 +105,11 @@ img{
     width: 100%;
 }
 
+#hideContentsButton2{
+	width: 20px;
+	height: 20px;
+	margin: 0;
+}
 
 .flex-main{
 	
